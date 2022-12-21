@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{font-size: 18px;}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background:rgb(244, 244, 244);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h1{
+    font-size:7rem ;
+    margin: 5rem 0;
+    color:rgb(220, 203, 239 ,0.8);
+}
+
+input{
+    padding:0.8rem 1.1rem;
+    width: 15rem;
+    border-radius: 7px;
+    font: inherit;
+    font-size: 0.8rem;
+    border: 0.5px solid rgb(178, 178, 178);
+}
+form{
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    overflow: hidden;
+}
+input::placeholder{
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    height:100%;
+    margin: auto 0;
+    color:rgb(187, 156, 221)
+}
+
+.todo-work{
+    padding: 0.8rem 1.1rem;
+    border-bottom: 1px solid rgba(125, 124, 124, 0.3);
+    cursor: pointer;
+    list-style: none;
+    min-width: 15rem;
+    /* Doesn't let the text selected */
+    user-select: none;
+}
+
+.todo-work .close{
+    font-size: 1rem;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
+    float: right;
+    margin-top: -3px;
+    opacity: 0;
+}
+
+.todo-work:hover .close{
+    opacity: 1;
+}
+
+.completed{
+    text-decoration: line-through; 
+}
+
+span{
+    font-size: 0.7rem;
+    color: rgb(145, 139, 139);
+    margin-top: 5rem;
+}
